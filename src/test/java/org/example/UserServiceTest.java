@@ -16,7 +16,7 @@ class UserServiceTest {
 
         UserService userService = new UserService(mockRepository);
 
-        User user = new User(1L, "John Doe");
+        User user = new User(1L, "Sasha Maliuk");
 
         userService.createUser(user);
 
@@ -28,7 +28,7 @@ class UserServiceTest {
 
         UserService userService = new UserService(mockRepository);
 
-        User user = new User(1L, "John Doe");
+        User user = new User(1L, "Sasha Maliuk");
 
         when(mockRepository.findById(1L)).thenReturn(Optional.of(user));
 
@@ -44,7 +44,7 @@ class UserServiceTest {
 
         UserService userService = new UserService(mockRepository);
 
-        User user = new User(1L, "John Doe Updated");
+        User user = new User(1L, "Sasha Maliuk Updated");
 
         userService.updateUser(user);
 
